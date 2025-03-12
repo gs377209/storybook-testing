@@ -38,6 +38,12 @@ export const Primary: Story = {
     // 👇 Assert DOM structure
     await expect(canvas.getByRole("button")).toBeInTheDocument();
   },
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/qbPCRkMeh6EaOwq5xHPcDI/Learning?node-id=102-9&t=dxlQ7fNzdAQutULW-4",
+    },
+  },
 };
 
 export const Secondary: Story = {

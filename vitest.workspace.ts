@@ -1,7 +1,7 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { coverageConfigDefaults, defineWorkspace } from "vitest/config";
+import { defineWorkspace } from "vitest/config";
 
 import { storybookTest } from "@storybook/experimental-addon-test/vitest-plugin";
 
@@ -12,7 +12,7 @@ const dirname =
 
 // More info at: https://storybook.js.org/docs/writing-tests/test-addon
 export default defineWorkspace([
-  "vite.config.ts",
+  "./vitest.config.ts",
   {
     extends: "vite.config.ts",
     plugins: [
@@ -20,7 +20,7 @@ export default defineWorkspace([
       // See options at: https://storybook.js.org/docs/writing-tests/test-addon#storybooktest
       storybookTest({
         configDir: path.join(dirname, ".storybook"),
-        storybookScript: "npm run storybook --ci",
+        storybookScript: "npm run storybook -- --ci",
         storybookUrl: process.env.SB_URL,
       }),
     ],
@@ -28,9 +28,15 @@ export default defineWorkspace([
       name: "storybook",
       browser: {
         enabled: true,
-        headless: true,
-        name: "chromium",
+        // Make sure to install Playwright
         provider: "playwright",
+        headless: true,
+        instances: [
+          {
+            browser: "chromium",
+            headless: true,
+          },
+        ],
       },
       setupFiles: [".storybook/vitest.setup.ts"],
     },
