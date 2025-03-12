@@ -1,5 +1,8 @@
 {
   "name": "@gs377209/storybook-testing",
+  "repository": {
+    "url": "https://github.com/gs377209/storybook-testing.git"
+  },
   "private": false,
   "version": "1.0.0",
   "type": "module",
