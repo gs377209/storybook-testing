@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { fn } from "@storybook/test";
+import { userEvent, within, expect, fn } from "@storybook/test";
 
 import { Button } from "../../lib/main";
 
@@ -29,6 +29,14 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: "Button",
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await userEvent.click(canvas.getByRole("button"));
+
+    // 👇 Assert DOM structure
+    await expect(canvas.getByRole("button")).toBeInTheDocument();
   },
 };
 

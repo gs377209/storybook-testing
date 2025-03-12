@@ -4,6 +4,6 @@
   "exitOnceUploaded": true,
   "externals": ["public/**"],
   "onlyChanged": true,
-  "projectId": "67d18894422765a0c090536b",
+  "projectId": "Project:67d18894422765a0c090536b",
   "skip": "dependabot/**"
 }

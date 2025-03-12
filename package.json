@@ -27,7 +27,13 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build",
-    "chromatic": "chromatic"
+    "chromatic": "chromatic",
+    "test-storybook": "test-storybook",
+    "test-storybook:coverage": "test-storybook --coverage",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test-storybook-vite": "vitest --project=storybook",
+    "test-storybook-vite:coverage": "vitest --project=storybook --coverage"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -36,6 +42,8 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.5",
     "@eslint/js": "^9.21.0",
+    "@storybook/addon-a11y": "^8.6.4",
+    "@storybook/addon-coverage": "^1.0.5",
     "@storybook/addon-essentials": "^8.6.4",
     "@storybook/addon-onboarding": "^8.6.4",
     "@storybook/blocks": "^8.6.4",
@@ -43,6 +51,7 @@
     "@storybook/react": "^8.6.4",
     "@storybook/react-vite": "^8.6.4",
     "@storybook/test": "^8.6.4",
+    "@storybook/test-runner": "^0.22.0",
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -50,6 +59,7 @@
     "@vitejs/plugin-react-swc": "^3.8.0",
     "@vitest/browser": "^3.0.8",
     "@vitest/coverage-v8": "^3.0.8",
+    "axe-playwright": "^2.1.0",
     "chromatic": "^11.27.0",
     "eslint": "^9.21.0",
     "eslint-plugin-react-dom": "^1.31.0",
@@ -59,6 +69,7 @@
     "eslint-plugin-storybook": "^0.11.4",
     "glob": "^11.0.1",
     "globals": "^15.15.0",
+    "jsdom": "^26.0.0",
     "playwright": "^1.51.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
