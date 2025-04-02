@@ -4,7 +4,7 @@
     "url": "https://github.com/gs377209/storybook-testing.git"
   },
   "private": false,
-  "version": "3.0.0",
+  "version": "3.0.1",
   "type": "module",
   "files": [
     "dist"
