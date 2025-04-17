@@ -41,7 +41,7 @@ export const Primary: Story = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/qbPCRkMeh6EaOwq5xHPcDI/Learning?node-id=102-9&t=dxlQ7fNzdAQutULW-4",
+      url: "https://www.figma.com/design/qbPCRkMeh6EaOwq5xHPcDI/Learning?node-id=279-236&t=wZDiPmzLZCTdmzi9-4",
     },
   },
 };
