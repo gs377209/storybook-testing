@@ -1,7 +1,7 @@
 {
   "name": "@gs377209/storybook-testing",
   "repository": {
-    "url": "https://github.com/gs377209/storybook-testing.git"
+    "url": "git+https://github.com/gs377209/storybook-testing.git"
   },
   "private": false,
   "version": "3.0.2",
