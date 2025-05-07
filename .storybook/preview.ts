@@ -15,9 +15,9 @@ const preview: Preview = {
       // 'off' - skip a11y checks entirely
       test: "error",
     },
-
-    tags: ["autodocs"],
   },
+
+  tags: ["autodocs"],
 };
 
 export default preview;
