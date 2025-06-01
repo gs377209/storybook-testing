@@ -50,7 +50,7 @@
     "@storybook/addon-coverage": "^1.0.5",
     "@storybook/addon-designs": "^8.2.1",
     "@storybook/addon-essentials": "^8.6.12",
-    "@storybook/addon-mdx-gfm": "^8.6.12",
+    "@storybook/addon-mdx-gfm": "^8.6.14",
     "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
     "@storybook/experimental-addon-test": "^8.6.12",
