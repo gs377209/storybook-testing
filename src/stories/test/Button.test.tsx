@@ -5,7 +5,7 @@ import { test } from "vitest";
 import { composeStories } from "@storybook/react";
 
 import * as stories from "../Button.stories";
-import { fireEvent, screen, expect as storybookExpect } from "@storybook/test";
+import { fireEvent, screen, expect as storybookExpect } from "storybook/test";
 
 const { Secondary } = composeStories(stories);
 
