@@ -1,5 +1,7 @@
 name: Storybook Tests
 on: deployment_status
+permissions:
+  contents: read
 jobs:
   test:
     timeout-minutes: 60
