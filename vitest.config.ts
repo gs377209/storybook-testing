@@ -3,7 +3,7 @@ import {
   defineConfig,
   mergeConfig,
 } from "vitest/config";
-import { storybookTest } from "@storybook/experimental-addon-test/vitest-plugin";
+import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
